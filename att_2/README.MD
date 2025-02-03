@@ -1,4 +1,4 @@
-##Atividade 2: Temporizador de um Disparo (One-Shot)
+## Atividade 2: Temporizador de um Disparo (One-Shot)
 
 Esta atividade implementa um sistema de acionamento de LEDs baseado no clique de um botão, utilizando a função add_alarm_in_ms(). O sistema liga os LEDs de forma sequencial com intervalos de 3 segundos, garantindo que o botão só possa ser acionado novamente após o ciclo completo.
 
