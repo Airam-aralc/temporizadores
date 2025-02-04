@@ -6,4 +6,4 @@ Este repositório contém duas atividades que utilizam temporizadores na platafo
 
 video desmonstrativo da atividade 1:https://www.dropbox.com/scl/fi/29txtv7peehwvidwpsbkb/atividade-01.mp4?rlkey=0hya5f7tel7oxmbnvl4o58354&st=kfhbgsnt&dl=0
 
-video desmonstrativo da atividade 2: https://www.dropbox.com/scl/fi/iomvzcnmpj5ivgpo8zfm1/atividade-02.mp4?rlkey=u7cqbwlhgg4du45ch6j0vcsh1&st=9ytnzdmy&dl=0
+video desmonstrativo da atividade 2: https://www.dropbox.com/scl/fi/na2pl9c7gp9a5qo7d3zoy/atividade-02.mp4?rlkey=adgldf0utw5m8fqemdwbm7t8q&st=s2ttaf79&dl=0
