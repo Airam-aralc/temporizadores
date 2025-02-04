@@ -8,9 +8,10 @@
 
 int estado = 0; // Controla a cor do semáforo (0 = amarelo, 1 = verde, 2 = vermelho)
 
-// Função de callback do temporizador que alterna os LEDs
+// Função de callback do temporizador que alterna os LEDs, executada automaticamente a cada 3 segundos
 bool repeating_timer_callback(struct repeating_timer *t) 
-{   // Apaga todos os LEDs antes de acender o próximo
+{   
+    // Apaga todos os LEDs antes de acender o próximo
     gpio_put(LED_PIN_RED, false);
     gpio_put(LED_PIN_YELLOW, false);
     gpio_put(LED_PIN_GREEN, false);
@@ -47,7 +48,7 @@ int main()
     gpio_init(LED_PIN_GREEN);
     gpio_set_dir(LED_PIN_GREEN, GPIO_OUT);
 
-    // Liga o LED vermelho no início
+    // Liga o LED vermelho no início, sendo o estado inical do semáforo
     gpio_put(LED_PIN_RED, true);
     
     // Configura o temporizador para alternar os LEDs a cada 3 segundos
@@ -56,8 +57,8 @@ int main()
 
     // Loop infinito que exibe uma mensagem a cada segundo
     while (true) {
-        printf("Passou 1 segundo\n");
+        printf("Passou 1 segundo\n"); //mensagem para depuração
         sleep_ms(1000);
     }
-    return 0;
+    return 0; //nunca será alcanlado, pois o loop é infinito, usado como boa prática de programação
 }

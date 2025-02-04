@@ -2,7 +2,6 @@
 #include "pico/stdlib.h"
 #include "pico/time.h"
 
-// Definição dos pinos dos LEDs e do botão
 const uint LED_PIN_RED = 13;
 const uint LED_PIN_YELLOW = 12;
 const uint LED_PIN_GREEN = 11;
@@ -10,7 +9,7 @@ const uint BUTTON_PIN = 5;
 
 // Variáveis de controle
 int estado = 0;
-bool led_active = false; // Indica se os LEDs estão no ciclo
+bool led_active = false; // Indica se o semáforo está ativo (para evitar múltiplos acionamentos do botão)
 
 // Função callback para alternar os LEDs a cada 3 segundos
 int64_t turn_off_callback(alarm_id_t id, void *user_data)
